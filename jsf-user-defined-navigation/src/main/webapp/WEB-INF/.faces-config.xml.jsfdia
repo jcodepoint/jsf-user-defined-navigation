@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#home.xhtml" PATH="/home.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#home.xhtml:0" NAME="item" PATH="/home.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="exito:#{navigationBean.verificarValor}:#page-success.xhtml"
+    NAME="output" PATH="/page-success.xhtml"
+    TARGET="rules:#page-success.xhtml"
+    TITLE="#{navigationBean.verificarValor}:exito" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="error:#{navigationBean.verificarValor}:#page-error.xhtml"
+    NAME="output1" PATH="/page-error.xhtml"
+    TARGET="rules:#page-error.xhtml"
+    TITLE="#{navigationBean.verificarValor}:error" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#page-error.xhtml" PATH="/page-error.xhtml"
+  SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#page-success.xhtml"
+  PATH="/page-success.xhtml" SHAPE="256,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
